@@ -1,0 +1,95 @@
+{
+  "entities": {
+    "User": {
+      "collection": "users",
+      "documentId": "uid",
+      "fields": {
+        "uid": "string",
+        "email": "string",
+        "displayName": "string",
+        "avatarUrl": "string",
+        "isAdmin": "boolean",
+        "isSuspended": "boolean",
+        "createdAt": "timestamp"
+      }
+    },
+    "VipTrade": {
+      "collection": "vip_trades",
+      "documentId": "id",
+      "fields": {
+        "id": "string",
+        "title": "string",
+        "description": "string",
+        "imageUrl": "string",
+        "publishedAt": "timestamp",
+        "reactions": "map"
+      }
+    },
+    "MarketAnalysis": {
+      "collection": "market_analysis",
+      "documentId": "id",
+      "fields": {
+        "id": "string",
+        "title": "string",
+        "marketExplanation": "string",
+        "supportLevels": "string",
+        "resistanceLevels": "string",
+        "keyLevels": "string",
+        "imageUrl": "string",
+        "publishedAt": "timestamp",
+        "reactions": "map"
+      }
+    },
+    "CommunityPost": {
+      "collection": "community_posts",
+      "documentId": "id",
+      "fields": {
+        "id": "string",
+        "userId": "string",
+        "userName": "string",
+        "userAvatar": "string",
+        "content": "string",
+        "imageUrl": "string",
+        "createdAt": "timestamp",
+        "reactions": "map",
+        "replyCount": "number"
+      }
+    },
+    "CommunityReply": {
+      "collection": "community_replies",
+      "documentId": "id",
+      "fields": {
+        "id": "string",
+        "postId": "string",
+        "userId": "string",
+        "userName": "string",
+        "userAvatar": "string",
+        "content": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    "Report": {
+      "collection": "reports",
+      "documentId": "id",
+      "fields": {
+        "id": "string",
+        "reporterId": "string",
+        "targetId": "string",
+        "targetType": "string",
+        "reason": "string",
+        "status": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    "ContentPage": {
+      "collection": "content_pages",
+      "documentId": "id",
+      "fields": {
+        "id": "string",
+        "title": "string",
+        "body": "string",
+        "updatedAt": "timestamp"
+      }
+    }
+  }
+}

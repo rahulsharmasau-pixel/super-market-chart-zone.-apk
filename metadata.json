@@ -1,0 +1,6 @@
+{
+  "name": "Market Chart Zone",
+  "description": "Market Chart Zone is a premium trading education and market analysis mobile application with VIP signals, market analysis, community, trading calculators, and creator-controlled admin panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
